@@ -9,10 +9,16 @@
 }
 body {
   background-color: var(--primary-bg-color);
+
+  font-family: roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
-a {
+/* a {
   text-decoration: none;
-}
+} */
 .list {
   list-style: none;
 }
@@ -20,6 +26,13 @@ a {
 /* Лого */
 .logo {
   color: #000000;
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  text-decoration: none;
 }
 .logo .part-logo {
   color: var(--accent-color);
@@ -35,6 +48,15 @@ a {
 .site-nav .link.current {
   color: #2196f3;
 }
+.site-nav .link,
+.contacts a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+}
 /* Контакты */
 .contacts a {
   color: var(--primary-text-color);
@@ -47,20 +69,44 @@ a {
 .hero {
   background-color: var(--hero-footer-bg-color);
 }
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
 .hero-title,
 .hero-button {
   color: var(--primary-bg-color);
 }
 .hero-button {
   background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  text-decoration: none;
 }
 /* Наши приемущества */
 .section-title {
   color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 .advantages-subtitle {
   color: var(--title-text-color);
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
 .advantages-text {
@@ -75,20 +121,33 @@ a {
 }
 .team-title {
   color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
 }
 .team-text {
   color: var(--primary-text-color);
+
+  font-size: 16px;
+  line-height: 1.19;
 }
 /* Футер */
 .footer {
   color: var(--primary-bg-color);
   background-color: var(--hero-footer-bg-color);
 }
+
+.address {
+  font-style: normal;
+}
 .footer > a {
   color: var(--primary-bg-color);
 }
 .contacts-footer a {
   color: rgba(255, 255, 255, 0.6);
+
+  text-decoration: none;
 }
 
 /* Портфолио */
@@ -96,6 +155,11 @@ a {
 .filter-button {
   color: var(--title-text-color);
   background-color: #f5f4fa;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -106,7 +170,15 @@ a {
 /* Проекты */
 .project-title {
   color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 .project-text {
   color: var(--primary-text-color);
+
+  font-size: 16px;
+  line-height: 1.87;
 }
