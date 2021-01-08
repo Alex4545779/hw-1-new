@@ -22,7 +22,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
   padding: 0;
 }
@@ -210,30 +211,69 @@ h6 {
 .section.team {
   background-color: var(--second-bg-color);
 }
+.team-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team {
+  display: flex;
+  text-align: center;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-item {
+  background-color: var(--primary-bg-color);
+
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.team-item > img {
+  display: block;
+  margin-bottom: 30px;
+}
 .team-title {
   color: var(--title-text-color);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+
+  margin-bottom: 10px;
 }
 .team-text {
   color: var(--primary-text-color);
 
   font-size: 16px;
   line-height: 1.19;
+
+  padding-bottom: 30px;
 }
 /* Футер */
 .footer {
   color: var(--primary-bg-color);
   background-color: var(--hero-footer-bg-color);
 }
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer .logo {
+  display: block;
+  color: var(--primary-bg-color);
+  margin-bottom: 20px;
+}
 
 .address {
   font-style: normal;
+  margin-bottom: 9px;
 }
 .footer > a {
   color: var(--primary-bg-color);
+}
+.footer-info:not(:last-child) {
+  margin-bottom: 9px;
 }
 .contacts-footer a {
   color: rgba(255, 255, 255, 0.6);
@@ -242,7 +282,22 @@ h6 {
 }
 
 /* Портфолио */
+.portfolio-div {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
+.portfolio-title {
+  display: none;
+}
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.control:not(:last-child) {
+  margin-right: 8px;
+}
 .filter-button {
   color: var(--title-text-color);
   background-color: #f5f4fa;
@@ -251,6 +306,14 @@ h6 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  display: inline-block;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -259,6 +322,25 @@ h6 {
 }
 
 /* Проекты */
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: calc((100%-62px) / 3); */
+  background-color: tomato;
+}
+.project-item {
+  width: calc((100% -60px) / 3);
+  background-color: tomato;
+  margin-right: 30px;
+}
+.project-item:nth-child(3n) {
+  margin-right: 0;
+}
+.project-item img {
+  display: block;
+}
 .project-title {
   color: var(--title-text-color);
 
